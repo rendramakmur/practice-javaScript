@@ -9,7 +9,8 @@
 // Var tetep diinput manual
 // Var nama & nilai dapat diisi apa saja
 
-var nilai = 66;
+var nama = prompt('Masukkan nama:');
+var nilai = prompt('Masukkan nilai:');
 var descNilai = '';
 
 if (nilai <= 100 && nilai >= 80) {
@@ -26,4 +27,4 @@ if (nilai <= 100 && nilai >= 80) {
     descNilai = 'Nilai Invalid'
 };
 
-console.log(descNilai);
+alert('Nama mahasiswa: ' + nama + '\nNilai: ' + nilai + '\nDeskripsi Nilai: ' +descNilai);
