@@ -19,17 +19,17 @@ if (nama === '' || nama === null) {
     console.log('Anda tidak boleh masuk!');
 } else { // else ini kondisi yang menyatakan apabila tidak memenuhi if-nya, maka akan berlanjut. Apabila if-nye terpenuhi maka program selesai.
 
-var sisaUang = 0;
-if (age < 17) {
-    sisaUang = money - hargaJuice;
-} else {
-    sisaUang = money - hargaAnggur;
-}
+    var sisaUang = 0;
+    if (age < 17) {
+        sisaUang = money - hargaJuice;
+    } else {
+        sisaUang = money - hargaAnggur;
+    }
 
-if(sisaUang < 0) {
-    console.log('Uang tidak cukup. Anda harus pulang');
-} else {
-    console.log('Anda bisa pesan minum. Sisa uang anda: ' + sisaUang);
-}
+    if(sisaUang < 0) {
+        console.log('Uang tidak cukup. Anda harus pulang');
+    } else {
+        console.log('Anda bisa pesan minum. Sisa uang anda: ' + sisaUang);
+    }
 
 }
