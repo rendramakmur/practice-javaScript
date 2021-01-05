@@ -2,7 +2,27 @@
 
 // Setelah memencet tombol, gatcha akan memulai random nomor 1-5
 
-var gatcha = Math.floor(Math.random() * 5) + 1;
+/**
+ * Pseudocode:
+ * STORE gatcha WITH RANDOM NUMBER BETWEEN 1 - 5
+ * SWITCH gatcha
+ *      CASE 1
+ *          DISPLAY "Coba lagi ya!"
+ *      CASE 2
+ *          DISPLAY "Selamat kamu mendapatkan kupon sebanyak 5"
+ *      CASE 3
+ *          DISPLAY "Selamat kamu mendapatkan kupon sebanyak 15"
+ *      CASE 4
+ *          DISPLAY "Selamat kamu mendapatkan kupon sebanyak 50"
+ *      CASE 5
+ *          DISPLAY "WOW, kamu menang jackpot! Selamat!!!"
+ * END SWITCH
+ * 
+ * 
+ * 
+ */
+
+var gatcha = Math.ceil(Math.random() * 5);
 
 switch (gatcha) {
     case 1 :
