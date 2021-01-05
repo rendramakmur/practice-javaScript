@@ -30,7 +30,8 @@
  *              DISPLAY "Uang tidak cukup, Anda harus pulang."
  *          ELSE
  *              DISPLAY "Anda bisa pesan minum. Sisa uang anda:" CONCAT sisaUang
- * 
+ *          END IF
+ *      END IF
  * 
  */
 
