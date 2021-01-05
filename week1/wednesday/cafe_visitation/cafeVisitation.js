@@ -20,13 +20,12 @@
  *      IF nama IS FALSY
  *          DISPLAY "Anda tidak boleh masuk!"
  *      ELSE
- *          STORE sisaUang WITH 0
  *          IF age LESS THAN NUMBER 17
- *              SET sisaUang WITH money MINUS 50000
+ *              SET money WITH money MINUS 50000
  *          ELSE
- *              SET sisaUang WITH money MINUS 300000
+ *              SET money WITH money MINUS 50000
  *          END IF
- *          IF sisaUang LESS THAN NUMBER 0
+ *          IF money LESS THAN NUMBER 0
  *              DISPLAY "Uang tidak cukup, Anda harus pulang."
  *          ELSE
  *              DISPLAY "Anda bisa pesan minum. Sisa uang anda:" CONCAT sisaUang
@@ -56,17 +55,16 @@ if (!nama) {
     console.log('Anda tidak boleh masuk!');
 } else { // else ini kondisi yang menyatakan apabila tidak memenuhi if-nya, maka akan berlanjut. Apabila if-nye terpenuhi maka program selesai.
 
-    var sisaUang = 0;
     if (age < 17) {
-        sisaUang = money - hargaJuice;
+        money -= hargaJuice;
     } else {
-        sisaUang = money - hargaAnggur;
+        money -= hargaAnggur;
     }
 
-    if(sisaUang < 0) {
+    if(money < 0) {
         console.log('Uang tidak cukup. Anda harus pulang');
     } else {
-        console.log('Anda bisa pesan minum. Sisa uang anda: ' + sisaUang);
+        console.log('Anda bisa pesan minum. Sisa uang anda: ' + money);
     }
 
 }
