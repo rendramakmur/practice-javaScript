@@ -20,16 +20,27 @@
 // }
 
 
-const kalimat ='erby cinta mati dengan afifa';
-//eb it ai dna ff
+// const kalimat ='erby cinta mati dengan afifa';
+// //eb it ai dna ff
 
-var tampung = '';
+// var tampung = '';
 
-for(var i = 0; i < kalimat.length;i++) {
-    if(i % 2 === 0) {
-        if(kalimat[i] !== ' ') {
-            tampung += kalimat[i];
-            console.log(tampung);
-        }
+// for(var i = 0; i < kalimat.length;i++) {
+//     if(i % 2 === 0) {
+//         if(kalimat[i] !== ' ') {
+//             tampung += kalimat[i];
+//             console.log(tampung);
+//         }
+//     }
+// }
+
+var s = '';
+
+for(var i = 5; i > 0; i--) {
+    for(var j = 1; j <= i; j++) {
+        s += '*'
     }
+    s += '\n';
 }
+
+console.log(s);
