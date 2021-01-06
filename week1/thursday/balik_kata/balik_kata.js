@@ -1,8 +1,8 @@
 let kata ='Javascript';
-let tampung = '';
+let balik = '';
 
 for(var i = (kata.length - 1); i >= 0; i--) {
-    tampung += kata[i]
+    balik += kata[i]
 }
 
-console.log(tampung);
+console.log(balik);
