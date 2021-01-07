@@ -32,15 +32,112 @@
 //             console.log(tampung);
 //         }
 //     }
+// // }
+
+// var s = '';
+
+// for(var i = 5; i > 0; i--) {
+//     for(var j = 1; j <= i; j++) {
+//         s += '*'
+//     }
+//     s += '\n';
 // }
 
-var s = '';
+// console.log(s);
 
-for(var i = 5; i > 0; i--) {
-    for(var j = 1; j <= i; j++) {
-        s += '*'
+
+// Latihan for loop asterisks
+//
+//    *
+//   **
+//  ***
+// ****
+//***** 
+//
+
+
+// for (var i = 1; i <= num; i++) {
+//     var temp = '';
+//     for(var j = 0; j < num; j++) {
+//         if(j >= (num - i)) {
+//             temp += '*';
+//         } else {
+//             temp += ' ';
+//         }
+//     }
+//     console.log(temp);
+// }
+
+
+/**
+ *
+ *
+ * var num = 9;
+ * (minimal 7 dan angka harus ganjil)
+ *
+ * *********
+ * **     **
+ * * *   * *
+ * *  * *  *
+ * *   *   *
+ * *  * *  *
+ * * *   * *
+ * **     **
+ * *********
+ */
+
+
+// let num = 9;
+
+// for (var i = 1; i <= num; i++) {
+//     var temp = '';
+//     for (var j = 1; j <= num; j++) {
+//         if(i === 1 || i === num) {
+//             temp += '*';
+//         } else {
+//             if (j === 1 || j === num) {
+//                 temp += '*';
+//             } else if (j === i || j === (num - i + 1)) {
+//                 temp += '*';
+//             } else if (j === num/2) {
+//                 temp += '*';
+//             } else {
+//                 temp += ' ';
+//             }
+//         }
+//     }
+//     console.log(temp);
+// }
+
+
+/* 
+ *
+ * *******
+ * *  *  *
+ * *  *  *
+ * *******
+ * *  *  *
+ * *  *  *
+ * *******
+ * 
+ */
+
+let num = 7;
+
+for (var i = 1; i <= num; i++) {
+    var temp = '';
+    for (var j = 1; j <= num; j++) {
+        if(i === 1 || i === num || i === 4) {
+            temp += '*';
+        } else {
+            if (j === 1 || j === num) {
+                temp += '*';
+            } else if (j === 4) {
+                temp += '*';
+            } else {
+                temp += ' ';
+            }
+        }
     }
-    s += '\n';
+    console.log(temp);
 }
-
-console.log(s);
