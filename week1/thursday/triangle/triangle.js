@@ -31,24 +31,46 @@
 //     triangle += '\n'
 // }
 
+// let num = 3;
+// let triangle = '';
+
+
+// for(var i = 1; i <= num*2; i++) {
+//     if(i % 2 !== 0) {
+//         for(var j = 1; j <= (num*2 - i); j += 2) {
+//             triangle += ' ';
+//         }
+//         for(var j = 1; j <= i; j++) {
+//             if(j % 2 !== 0) {
+//                 triangle += 'x';
+//             } else {
+//                 triangle += 'o';
+//             }
+//         }
+//         triangle += '\n';
+//     }
+// }
+
+// console.log(triangle);
+
+
 let num = 3;
-let triangle = '';
 
-
-for(var i = 1; i <= num*2; i++) {
+for(var i = 1; i <= num * 2; i++) {
+    var tampung = '';
     if(i % 2 !== 0) {
-        for(var j = 1; j <= (num*2 - i); j += 2) {
-            triangle += ' ';
+        for(var j = 1; j <= (num * 2 - i) ; j += 2) {
+            tampung += ' ';
         }
         for(var j = 1; j <= i; j++) {
             if(j % 2 !== 0) {
-                triangle += 'x';
+                tampung += 'x';
             } else {
-                triangle += 'o';
+                tampung += 'o';
             }
         }
-        triangle += '\n';
+        console.log(tampung);
     }
 }
 
-console.log(triangle);
+
