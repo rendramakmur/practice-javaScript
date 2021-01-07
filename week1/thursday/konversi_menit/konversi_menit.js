@@ -8,6 +8,9 @@ let menit = 0;
 if(detik >= 60) {
     menit += Math.floor(detik/60);
     detik %= 60;
+    if (detik < 10) {
+        detik = '0' + detik
+    }
 }
 
 // console.log(menit +':'+(detik - menit * 60));
