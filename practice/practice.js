@@ -99,8 +99,6 @@
 //                 temp += '*';
 //             } else if (j === i || j === (num - i + 1)) {
 //                 temp += '*';
-//             } else if (j === num/2) {
-//                 temp += '*';
 //             } else {
 //                 temp += ' ';
 //             }
@@ -122,17 +120,17 @@
  * 
  */
 
-let num = 7;
+let num = 11;
 
 for (var i = 1; i <= num; i++) {
     var temp = '';
     for (var j = 1; j <= num; j++) {
-        if(i === 1 || i === num || i === 4) {
+        if(i === 1 || i === num || i === Math.round(num/2)) {
             temp += '*';
         } else {
             if (j === 1 || j === num) {
                 temp += '*';
-            } else if (j === 4) {
+            } else if (j === Math.round(num/2)) {
                 temp += '*';
             } else {
                 temp += ' ';
