@@ -139,3 +139,59 @@ for (var i = 1; i <= num; i++) {
     }
     console.log(temp);
 }
+
+
+
+/*
+
+Buat segitiga seperti
+
+  x
+ xox
+xoxox
+
+*/
+
+// Cara 1
+// let tampung = '';
+
+// for(var i = 1; i <= num * 2; i++) {
+//     var tampung = '';
+//     for(var j = i; j <= num * 2 - 2; j += 2) {
+//         tampung += ' ';
+//     }
+//     if(i % 2 !== 0) {
+//         for(var j = 1; j <= i; j++) {
+//             if(j % 2 !== 0) {
+//                 tampung += 'x';
+//             } else {
+//                 tampung += 'o';
+//             }
+        
+//         }
+//         console.log(tampung);
+//     }
+// }
+
+
+
+// Cara 2
+// for(var i = 1; i <= num * 2; i++) {
+//     if(i % 2 !== 0) {
+//         for(var j = 1; j <= (num * 2 - i - 1); j += 2) {
+//             tampung += ' ';
+//         }
+//         for(var k = 1; k <= i; k++) {
+//             if(k % 2 !== 0) {
+//                 tampung += 'x';
+//             } else {
+//                 tampung += 'o';
+//             }
+//         }
+//     tampung += '\n'
+//     }
+// }
+
+// console.log(tampung);
+
+
