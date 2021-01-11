@@ -256,3 +256,24 @@ for (let i = 1; i <= num; i++) {
     }
     console.log(temp);
 }
+
+
+// Bikin segitiga (tapi belom sempurna)
+/*
+  *
+ ***
+*****
+*/
+
+
+for (let i = 0; i < kata.length; i++) {
+    let temp = '';
+    for (let j = 0; j <= i; j++) {
+        if (j >= kata.length - i) {
+            temp += '*';
+        } else {
+            temp += ' ';
+        }
+    }
+    console.log(temp);
+}
