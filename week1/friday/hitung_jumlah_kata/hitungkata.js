@@ -1,4 +1,13 @@
 // Diberikan sebuah variabel kalimat bertipe string. Buatlah program yang menghitung jumlah kata yang terdapat didalam kalimat tersebut (dilarang menggunakan built in function split)
+/*
+
+Kualifikasi kata:
+1. Spasi terletak setelah huruf
+2. Huruf terakhir bukan spasi
+3. 
+
+*/
+
 
 let kalimat = 'aku suka coding';
 let kata = 0;
