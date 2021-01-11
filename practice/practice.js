@@ -195,3 +195,64 @@ xoxox
 // console.log(tampung);
 
 
+// Interisting Shape of I
+/*
+
+let num 5
+
+#####
+  |
+  |
+  |
+#####
+
+let num 6
+
+######
+  ||
+  ||
+  ||
+  ||
+######
+
+
+*/
+
+
+
+let num = 5;
+
+for (let i = 1; i <= num; i++) {
+    let temp = '';
+    // Ini kalau spasinya manual
+    // if (i !== 1 && i !== num) {
+    //     if (num % 2 === 0) {
+    //         for (let j = 1; j <= (num/2) - 1; j++) {
+    //             temp += ' ';
+    //         }
+    //     } else {
+    //         for (let j = 1; j <= Math.floor(num/2); j++) {
+    //             temp += ' ';
+    //         }
+    //     }
+    // }
+
+    for (let k = 1; k <= num; k++) {
+        if (i === 1 || i === num) {
+            temp += '#';
+        } else if (num % 2 === 0) {
+            if (k === num/2 || k === (num / 2 + 1)) {
+                temp += '|';
+            } else {
+                temp += ' '; // ini otomatis
+            }
+        } else {
+            if (k === Math.round(num/2)) {
+                temp += '|';
+            } else {
+                temp += ' '; //ini otomatis
+            }
+        }
+    }
+    console.log(temp);
+}
