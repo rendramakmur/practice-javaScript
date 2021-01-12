@@ -1,4 +1,8 @@
 function slice (data, start = 0, end = data.length) {
+    if (start > data.length) {
+        return [];
+    }
+    
     hasil = [];
     for (let i = start; i < end; i++) {
         hasil.push(data[i]);
