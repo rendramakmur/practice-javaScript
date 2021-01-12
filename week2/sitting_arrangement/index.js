@@ -1,21 +1,22 @@
+// Bayangkan array terluar itu i, array didalamnya itu j, element di dalam j itu k.
+//
+
 function sittingArrangement (person, column) {
     if (column < 1) {
         return 'Invalid number'
     }
 
     let seats = [];
-    let status = true;
     let index = 0;
     
     for(let i = 0; i < person.length/column; i++) {
         let temp = [];
         for(let j = 0; j < column; j++) {
-            temp.push(person[index]);
-            index++
-
-            if (person[index] === undefined) {
+            if (person[index] !== undefined) {
+                temp.push(person[index]);
+                index++
+            } else if (person[index] === undefined) {
                 temp.push('Kursi Kosong');
-                break;
             }
         }
         seats.push(temp);
