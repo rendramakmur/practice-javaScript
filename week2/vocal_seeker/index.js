@@ -1,6 +1,6 @@
 function vocalSeeker (board) {
     let vocal = 'aiueoAIUEO';
-    flag = false;
+    // flag = false;
     jumlahVocal = 0;
     temp = '';
 
@@ -10,15 +10,15 @@ function vocalSeeker (board) {
             // console.log('j ' + board[i][j])
             for (let k = 0; k < vocal.length; k++) {
                 if (board[i][j] === vocal[k]) {
-                    flag = true;
+                    // flag = true;
                     jumlahVocal++
                     temp += vocal[k];
                 }
                 // console.log('k ' + flag)
-                if (board[i][j] !== vocal[k]) {
-                    flag = false;
-                }
-                // console.log('k ' + board[i][j] + ' ' + vocal[k] + ' ' + flag)
+                // if (board[i][j] !== vocal[k]) {
+                //     flag = false;
+                // }
+                // console.log('k ' + board[i][j] + ' ' + vocal[k])
 
             }
         }
