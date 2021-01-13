@@ -6,7 +6,7 @@ function tentukanDeretGeometri (arr) {
         if (arr[i] * multiple === arr[i + 1]) {
             geometri = true;
             // console.log(arr[i] + ' ' + arr [i + 1] + ' ' + geometri);
-        } else if (arr[i] * multiple !== arr[i + 1]) {
+        } else {
             geometri = false;
         }
     }
