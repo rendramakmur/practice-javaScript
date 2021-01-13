@@ -90,12 +90,12 @@ function passwordGenerator (name) {
         return 'Minimal karakter yang diinput adalah 5 karakter'
     }
 
-    let output1 = changeVocals(name);
-    let output2 = reverseWord(output1);
-    let output3 = setLowerUpperCase(output2);
-    let output4 = removeSpace(output3);
+    let changeVocals = changeVocals(name);
+    let reverseWord = reverseWord(changeVocals);
+    let setCharCase = setLowerUpperCase(reverseWord);
+    let output = removeSpace(setCharCase);
 
-    return output4;
+    return output;
 
 }
 
