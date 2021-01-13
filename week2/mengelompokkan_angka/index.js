@@ -1,20 +1,20 @@
 function mengelompokkanAngka (arr) {
-    let tampung = [];
-    let ganjil = [];
-    let genap = [];
-    let kelipatanTiga = [];
+    let tampung = [[],[],[]];
+    // let ganjil = [];
+    // let genap = [];
+    // let kelipatanTiga = [];
     
     for (let i = 0; i < arr.length; i++) {
         if (arr[i] % 2 !== 0 && arr[i] % 3 !== 0) {
-            ganjil.push(arr[i]);
+            tampung[1].push(arr[i]);
         } else if (arr[i] % 2 === 0 && arr[i] % 3 !== 0) {
-            genap.push(arr[i])
+            tampung[0].push(arr[i]);
         } else if (arr[i] % 3 === 0) {
-            kelipatanTiga.push(arr[i])
+            tampung[2].push(arr[i]);
         }
     }
 
-    tampung.push(genap, ganjil, kelipatanTiga);
+    // tampung.push(genap, ganjil, kelipatanTiga);
 
     return tampung;
 }
