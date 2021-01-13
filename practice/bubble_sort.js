@@ -11,3 +11,6 @@ for (let i = 0; i < arr.length; i++) {
 }
 
 console.log(arr);
+
+
+// Untuk urutin abjad, bikin variable huruf dulu, terus jadiin dia variable terluar karena nanti yang dibandingin itu setiap hurufnya, jadi setiap ketemu huruf[i] di cetak arraynya.
