@@ -12,6 +12,8 @@ function targetTerdekat (arr) {
         }
     }
     
+    console.log(getIndex_o, getIndex_x);
+
     if (getIndex_x.length === 0) {
         return 0;
     }
@@ -23,6 +25,8 @@ function targetTerdekat (arr) {
             selisih.push(getIndex_x[j] - getIndex_o[0]);
         }
     }
+
+    console.log(selisih);
 
     for (let k = 0; k < selisih.length; k++) {
         if (selisih[0] < selisih[k]) {
