@@ -27,7 +27,7 @@ function splitting(str) {
     return output;
 }
 
-// console.log(splitting('Razor-Ranged,Invoker-Ranged,Meepo-Melee,Axe-Melee,Sniper-Ranged'));
+console.log(splitting('Razor-Ranged,Invoker-Ranged,Meepo-Melee,Axe-Melee,Sniper-Ranged'));
 
 function meleeRangedGrouping (str) {
     //your code here
