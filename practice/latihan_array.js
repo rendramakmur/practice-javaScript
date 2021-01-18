@@ -59,9 +59,9 @@ function tambahPenumpangBus(arr1, arr2) {
 
     if (arr2.length > index) {
         for (let i = index; i < arr2.length; i++) {
-            tidakDapatKursi += arr2[index]
+            tidakDapatKursi += arr2[index];
             if (index !== arr2.length - 1) {
-                tidakDapatKursi += ', '
+                tidakDapatKursi += ', ';
             }
             if (index === arr2.length - 2) {
                 tidakDapatKursi += 'dan ';
@@ -72,7 +72,7 @@ function tambahPenumpangBus(arr1, arr2) {
         return `${tidakDapatKursi} tidak mendapatkan kursi bus. Silahkan cari bus lainnya.`;
     }
 
-    console.log(tidakDapatKursi);
+    // console.log(tidakDapatKursi);
 
     return penampung;
     
