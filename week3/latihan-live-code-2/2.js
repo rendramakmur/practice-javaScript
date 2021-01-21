@@ -58,7 +58,6 @@
 
 
 function checkAdmission (student) {
-    let status = '';
     let id = '';
     let output = {
         name: student.name,
